@@ -1,0 +1,32 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  /* background-color: rgb(3, 3, 3); */
+  margin-top: -200px;
+  z-index: 1px;
+}
+
+.content{
+padding-left: 100px;
+padding-right: 100px;
+/* border: 2px solid red; */
+color: white;
+align-items: center;
+padding-top: 80px;
+}
+
+.welcomText{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  background-color: rgb(39, 39, 38);
+  left: 50%;
+}
+
+.App{
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+

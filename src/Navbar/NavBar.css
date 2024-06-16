@@ -1,0 +1,120 @@
+.sticky {
+  position: fixed; /* Change from sticky to fixed */
+  top: 250px; /* Position at the top of the viewport */
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.navbar {
+  border-radius: 40px;
+  width: 72px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: block;
+  padding: 10px 10px;
+  text-align: end;
+  color: rgb(94, 92, 92);
+  width: fit-content;
+  height: 50px;
+  border-radius: 50%;
+  align-content: center;
+  background-color: rgb(236, 234, 234);
+  margin-left: -70px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.home-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-tag {
+  padding-left: 5px;
+  padding-right: 10px;
+  display: none;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.navbar li:hover .nav-tag {
+  display: inline-block;
+  transform: translateX(0);
+}
+
+.navbar li:hover {
+  background-color: #ffb400;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar li.active {
+  background-color: #ffb400;
+  color: white;
+}
+
+.list {
+  display: flex;
+  width: 200px;
+}
+
+a:focus {
+  background-color: #ffb400;
+}
+
+@media (max-width: 920px) {
+  .sticky {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    margin: 0;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 0;
+    margin: 0px 2px 0px 2px;
+  }
+
+  .contact-main {
+    margin-bottom: 100px;
+  }
+
+  .navbar li:hover .nav-tag {
+    display: none;
+  }
+}

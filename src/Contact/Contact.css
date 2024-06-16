@@ -1,0 +1,176 @@
+.contact-title {
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-heading {
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+  font-size: 110px;
+  letter-spacing: 0px;
+  line-height: 0.7;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  color: rgba(102, 102, 102, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.touch-span {
+  color: #ffb400;
+  font-weight: 900;
+}
+
+.get-in {
+  font-size: 70px;
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  color: rgb(90, 87, 87);
+  text-align: center;
+  top: 50%;
+  font-family: "Poppins", sans-serif;
+  transform: translate(-50%, -50%);
+}
+
+.contact-page {
+  display: flex;
+  max-width: 1140px;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #666;
+}
+
+.icons-detail {
+  display: flex;
+  /* margin-bottom: 10px; */
+  /* background-color: antiquewhite; */
+  width: 100%;
+}
+
+.contact-icon {
+  color: #ffb400;
+  padding: 5px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  padding: 0px 0px 0px 30px;
+}
+
+.contact-info {
+  padding-left: 10px;
+  align-content: center;
+}
+
+.contact-dec {
+  margin-bottom: 0px;
+  color: rgb(145, 144, 144);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact-det {
+  font-weight: 700;
+  color: rgb(95, 94, 94);
+}
+
+.input-feiled {
+  display: inline-flex;
+  gap: 10px;
+  
+}
+
+.input-feiled input {
+  border-radius: 20px;
+  height: 40px;
+  /* text-align: center;
+     */
+  padding-left: 10px;
+  border: 1px solid rgb(192, 189, 189);
+  margin-bottom: 20px;
+}
+
+textarea {
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgb(192, 189, 189);
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.note-p{
+  margin-top: 10px;
+}
+
+.note-span{
+color: red;
+font-weight: bold;
+}
+
+.message-btn{
+  cursor: none;
+  }
+
+@media (max-width: 920px) {
+  .contact-title {
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .contact-heading {
+    display: none;
+  }
+
+  .get-in {
+    font-size: 30px;
+    background-color: rgb(238, 235, 235);
+    padding: 10px;
+    margin-top: 32px;
+    position: relative;
+    text-align: left;
+    color: #000;
+  }
+
+  .contact-page {
+    display: block;
+    max-width: 1140px;
+    padding-left: 3%;
+    padding-right: 0px;
+    color: #666;
+  }
+
+  .input-feiled {
+    /* display:table-row; */
+    flex-direction: column;
+    width: 300px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  textarea {
+    border-radius: 20px;
+    border: 1px solid rgb(192, 189, 189);
+    width: 350px;
+    /* margin-bottom: px; */
+  }
+
+  .input-feiled input {
+    border-radius: 10px;
+  }
+
+  .message-btn{
+    margin-top: 10px;
+  }
+
+  .contact-page p {
+    width: fit-content;
+    text-align: justify;
+    padding: 0px 20px 0px 0px;
+  }
+}

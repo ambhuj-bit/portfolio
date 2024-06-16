@@ -1,0 +1,123 @@
+.experience-main {
+  padding: 20px 30px 50px 0px;
+}
+
+.experience-head {
+  width: 100%;
+  text-align: center;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 10px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  width: 530px;
+}
+
+.icon-wrapper {
+  margin-right: 15px;
+}
+
+.cap-icon {
+  background-color: #ffb400;
+  padding: 10px;
+  font-size: 50px;
+  color: white;
+  border-radius: 50px;
+  position: relative;
+}
+
+.cap-icon::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 50px;
+  background-color: #c2c0bd;
+}
+
+.year-tag {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.designation {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.designation span {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(155, 154, 154);
+}
+
+.exp-edu {
+  color: #666;
+  /* padding-right: 30px; */
+}
+
+.exp-edu p {
+  text-align: justify;
+}
+
+.description-p {
+  padding-right: 0;
+}
+
+@media (max-width: 920px) {
+  
+  .experience-main {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  .expereince-footer {
+    padding: 0px 10px 10px 0px;
+  }
+
+  .exp-edu  {
+   width: auto;
+  }
+
+  .description-p{
+ padding-right: 20px;
+
+  }
+
+  .designation {
+    width: 330px;
+  }
+  .experience-item {
+    margin: 5px;
+    padding: 0px 20px 20px 0px;
+  }
+
+  .experience-head {
+    color: black;
+    text-align: left;
+    width: max-content;
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+}
