@@ -97,7 +97,7 @@
   }
 
   .exp-edu  {
-   width: auto;
+   width: min-content;
   }
 
   .description-p{
