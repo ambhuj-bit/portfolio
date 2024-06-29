@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 50px;
-  border: 2px solid #ffb400;
+  border: 2px solid #73b626;
   font-weight: 800;
   font-family: "Poppins", sans-serif !important;
   width: fit-content;
@@ -18,7 +18,7 @@
   right: 0;
   bottom: 0;
   left: 100%;
-  background-color: #ffb400;
+  background-color: #73b626;
   z-index: 0;
   transition: left 0.5s ease;
 }
@@ -50,7 +50,7 @@
   width: 50px;
   height: 50px;
   color: #fcfbf9;
-  background-color: #ffb400;
+  background-color: #73b626;
   border-radius: 50px 50px;
   padding: 10px;
   font-weight: 900;
