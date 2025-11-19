@@ -1,32 +1,27 @@
-body{
-  font-family: 'Poppins', sans-serif;
-  /* background-color: rgb(3, 3, 3); */
-  margin-top: -200px;
-  z-index: 1px;
+.App {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-.content{
-padding-left: 100px;
-padding-right: 100px;
-/* border: 2px solid red; */
-color: white;
-align-items: center;
-padding-top: 80px;
-}
-
-.welcomText{
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 50px;
-  background-color: rgb(39, 39, 38);
-  left: 50%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(115, 182, 38, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(115, 182, 38, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.App{
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
+.App > * {
+  position: relative;
+  z-index: 1;
 }
 

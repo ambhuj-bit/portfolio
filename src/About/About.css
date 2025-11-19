@@ -1,80 +1,105 @@
 .about-head {
   display: flex;
-  color: rgb(94, 92, 92);
+  color: var(--text-secondary);
 }
 
 .decription {
-  padding-left: 400px;
-  padding-right: 200px;
-  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  max-width: 800px;
 }
 
 .about-decr {
-  /* padding: 0px 15px 0px 15px; */
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
-  margin-left: 20px;
+  margin: 30px 0;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  animation: fadeIn 1s ease-out 0.2s both;
 }
 
 .about-button {
-  margin-left: 20px;
+  margin: 40px 0 0 0;
+  animation: fadeIn 1s ease-out 0.4s both;
 }
 
 .designation {
-  font-size: 51px;
+  font-size: 64px;
   font-weight: 900;
   font-family: "Poppins", sans-serif !important;
-  padding-bottom: 40px;
-  color: rgb(94, 92, 92);
+  padding-bottom: 20px;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInLeft 0.8s ease-out;
+  letter-spacing: -1px;
 }
 
 .name {
-  font-size: 51px;
+  font-size: 64px;
   font-weight: 900;
   font-family: "Poppins", sans-serif !important;
-  color: #73b626;
+  color: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInRight 0.8s ease-out;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  display: block;
 }
 
-.arrow-icon {
-  width: 50px;
-  height: 50px;
-  color: #fcfbf9;
-  background-color: #73b626;
-  border-radius: 50px 50px;
-  padding: 10px;
-  font-weight: 900;
-}
-
-.arrow-icon {
-  position: relative;
-  z-index: 1;
-  transition: color 0.3s ease;
-}
 
 @media (max-width: 920px) {
   .decription {
     padding-left: 0px;
     padding-right: 0px;
-    text-align: center;
+    text-align: left;
+    max-width: 100%;
   }
 
   .about-decr {
-    font-size: 16px;
-    text-align: revert;
+    font-size: 15px;
+    text-align: left;
     margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    line-height: 1.7;
+    word-wrap: break-word;
   }
 
   .name {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 900;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
   }
+
+  .designation {
+    font-size: 28px;
+    padding-bottom: 15px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+
   .about-head {
-    margin-bottom: 200px;
+    margin-bottom: 60px;
   }
 
   .about-button {
     display: flex;
-  justify-content: center; 
-  align-items: center; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .about-button > * {
+    width: 100%;
+    max-width: 300px;
   }
 }

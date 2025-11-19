@@ -37,6 +37,30 @@ function Skills() {
         name: "NodeJs",
         img: "https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/nodejs-1024.png",
       },
+      {
+        name: "Tailwind CSS",
+        img: "https://scontent.fdel12-1.fna.fbcdn.net/v/t39.30808-6/299463877_560030875914611_8025210373789510385_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=rnLFnTQ30joQ7kNvwG1Gf5K&_nc_oc=AdlZE1MdeVxjb7oFV3FixVqELmaEM7NcCcLDU9H86LgGchYtTNf0bR4xzo1Sg9fmqfs&_nc_zt=23&_nc_ht=scontent.fdel12-1.fna&_nc_gid=8rMROSzu31PUI8xqfBkPOQ&oh=00_AfinVHPcGUuQcUsJcbAnq7EZZ4mrY1MPllULee3hbiRuuw&oe=692370B7",
+      },
+      {
+        name: "SonarQube",  
+        img:"https://devtools.in/wp-content/uploads/2025/06/sonarqube-1.jpg"
+      },
+      {
+        name: "GitHub",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/2560px-GitHub_Invertocat_Logo.svg.png",
+      },
+      {
+        name: "Docker",
+        img: "https://images.ctfassets.net/o7xu9whrs0u9/4sYuVlC3grWV9xqiALyYr2/a52875856c016db3eb86c1d8adced886/Docker.logo2_.png",
+      },
+      {
+        name: "Gitlab",
+        img: "https://www.incredibuild.com/wp-content/uploads/2021/04/GitLab01.png",
+      },
+      {
+        name: "Jira",
+        img: "https://play-lh.googleusercontent.com/_AZCbg39DTuk8k3DiPRASr9EwyW058pOfzvAu1DsfN9ygtbOlbuucmXaHJi5ooYbokQX=w480-h960-rw",
+      },
     ];
   
   

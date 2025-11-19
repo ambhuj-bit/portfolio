@@ -6,12 +6,27 @@
 .skills-head {
   width: 100%;
   text-align: center;
-  color: #666666;
+  color: var(--text-primary);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 50px;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 36px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.skills-head::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  border-radius: 2px;
 }
 
 .grid-container {
@@ -26,28 +41,72 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.2s;
-  border: 1px solid #cfcbcb;
+  padding: 30px 20px;
+  border-radius: 16px;
+  transition: all var(--transition-base);
+  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: 0;
+}
+
+.grid-item:hover::before {
+  opacity: 0.1;
 }
 
 .grid-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.grid-item:hover .tech-image {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.grid-item:hover .tech-name {
+  color: var(--primary-color);
+  font-weight: 900;
 }
 
 .tech-image {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  transition: all var(--transition-base);
+  position: relative;
+  z-index: 1;
+  filter: grayscale(20%);
+}
+
+.grid-item:hover .tech-image {
+  filter: grayscale(0%);
 }
 
 .tech-name {
-  margin-top: 10px;
-  color: #333;
+  margin-top: 15px;
+  color: var(--text-primary);
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: all var(--transition-base);
 }
 
 .skills-mian::after {
@@ -62,28 +121,51 @@
 
 @media (max-width: 920px) {
   .skills-mian {
-    padding: 0px;
-  }
-  .grid-container {
-    display: flex;
-    overflow-x: scroll;
+    padding: 0px 15px 40px 15px;
   }
 
   .skills-mian::after {
-    content: "- ";
     display: none;
-    transform: scaleX(80);
-    padding-left: 0px;
-    margin-top: 50px;
-    color: #cc7f0c;
-    height: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 16px;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .grid-item {
+    padding: 20px 15px;
+    min-width: 0;
+  }
+
+  .tech-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tech-name {
+    font-size: 0.875rem;
+    margin-top: 12px;
+    word-wrap: break-word;
+    text-align: center;
   }
 
   .skills-head {
-    color: black;
-    margin-bottom: 10px;
+    color: var(--text-primary);
+    margin-bottom: 25px;
     width: 100%;
     text-align: left;
-    font-size: 26px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+  }
+
+  .skills-head::after {
+    left: 0;
+    transform: none;
+    width: 60px;
   }
 }

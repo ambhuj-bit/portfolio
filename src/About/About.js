@@ -18,13 +18,6 @@ function About() {
             building excellent website and mobile appilcation that improves the
             lives of those around me.
           </p>
-          <div className="about-button">
-            <CustomButton
-              text="More About Me"
-              path="/about"
-              icon="arrow-right"
-            />
-          </div>
         </div>
       </div>
     </div>

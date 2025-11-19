@@ -10,7 +10,7 @@ function ExperienceEduation() {
           designation: "web developer",
           company: "Searce",
           description:
-            "As a Software Engineer at Searce, I develop and maintain web applications using Angular, Node.js, and HTML5. I have 2+ years of experience in web development, having worked on several projects for clients in various domains.",
+            "As a Software Engineer at Searce I develop and maintain web applications using React, Angular, and Node.js. I have a proven track record of successfully delivering projects for clients across various industries. My focus is on building intuitive, responsive, and secure web solutions that meet the needs and expectations of end-users",
           isEmployee: true,
         },
         {
