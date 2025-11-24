@@ -39,7 +39,7 @@ function Skills() {
       },
       {
         name: "Tailwind CSS",
-        img: "https://scontent.fdel12-1.fna.fbcdn.net/v/t39.30808-6/299463877_560030875914611_8025210373789510385_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=rnLFnTQ30joQ7kNvwG1Gf5K&_nc_oc=AdlZE1MdeVxjb7oFV3FixVqELmaEM7NcCcLDU9H86LgGchYtTNf0bR4xzo1Sg9fmqfs&_nc_zt=23&_nc_ht=scontent.fdel12-1.fna&_nc_gid=8rMROSzu31PUI8xqfBkPOQ&oh=00_AfinVHPcGUuQcUsJcbAnq7EZZ4mrY1MPllULee3hbiRuuw&oe=692370B7",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s",
       },
       {
         name: "SonarQube",  

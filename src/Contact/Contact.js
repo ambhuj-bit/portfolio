@@ -116,7 +116,10 @@ function Contact() {
               className="form-textarea"
             ></textarea>
             <div className="form-submit">
-              <CustomButton text="Send Message" path="/" />
+              <button type="button" className="send-message-btn" disabled>
+                <span className="btn-text">Send Message</span>
+                <Icon.SendFill className="btn-icon" />
+              </button>
             </div>
             <p className="form-note">
               <span className="note-highlight">Note</span>: Input fields are currently

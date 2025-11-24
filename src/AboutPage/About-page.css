@@ -1,9 +1,23 @@
 .main-about {
-  padding: 0px 160px 0px 100px;
+  padding: 0px 240px 0px 100px;
   color: var(--text-primary);
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+/* Medium screens - adjust for navigation */
+@media (min-width: 921px) and (max-width: 1400px) {
+  .main-about {
+    padding-right: 220px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1401px) {
+  .main-about {
+    padding-right: 260px;
+  }
 }
 
 /* Medium screens - adjust for navigation */
@@ -32,7 +46,7 @@
 }
 
 .me {
-  color: #73b626;
+  color: var(--primary-color);
   font-weight: 900;
 }
 
@@ -294,7 +308,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(115, 182, 38, 0.1), rgba(115, 182, 38, 0.05));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(14, 165, 233, 0.05));
   border-radius: 14px;
   transition: all var(--transition-base);
 }
@@ -353,13 +367,13 @@ ul li {
 
 /* Experience Highlight Card */
 .experience-highlight {
-  background: linear-gradient(135deg, rgba(115, 182, 38, 0.08), rgba(115, 182, 38, 0.03));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(14, 165, 233, 0.03));
   border-color: var(--primary-color);
   border-width: 2px;
 }
 
 .experience-highlight:hover {
-  background: linear-gradient(135deg, rgba(115, 182, 38, 0.15), rgba(115, 182, 38, 0.08));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(14, 165, 233, 0.08));
 }
 
 .highlight-icon {

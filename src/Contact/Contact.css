@@ -1,9 +1,23 @@
 .contact-main {
-  padding: 0px 160px 100px 100px;
+  padding: 0px 240px 100px 100px;
   color: var(--text-primary);
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+/* Medium screens - adjust for navigation */
+@media (min-width: 921px) and (max-width: 1400px) {
+  .contact-main {
+    padding-right: 220px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1401px) {
+  .contact-main {
+    padding-right: 260px;
+  }
 }
 
 /* Medium screens - adjust for navigation */
@@ -126,7 +140,7 @@
 }
 
 .contact-method-card:hover {
-  background: rgba(115, 182, 38, 0.05);
+  background: rgba(14, 165, 233, 0.05);
   transform: translateX(5px);
 }
 
@@ -141,7 +155,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(115, 182, 38, 0.1), rgba(115, 182, 38, 0.05));
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(14, 165, 233, 0.05));
   border-radius: 14px;
   transition: all var(--transition-base);
   flex-shrink: 0;
@@ -256,7 +270,7 @@
 .form-textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(115, 182, 38, 0.1);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
   transform: translateY(-2px);
   background: white;
 }
@@ -270,6 +284,105 @@
 
 .form-submit {
   margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.send-message-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: not-allowed;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  min-width: 200px;
+}
+
+.send-message-btn .btn-text {
+  position: relative;
+  z-index: 1;
+  transition: color var(--transition-base);
+}
+
+.send-message-btn .btn-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  transition: all var(--transition-base);
+}
+
+.send-message-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  transition: left var(--transition-slow) ease;
+  z-index: 0;
+}
+
+.send-message-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+  z-index: 0;
+}
+
+.send-message-btn:not(:disabled):hover::before {
+  left: 0;
+}
+
+.send-message-btn:not(:disabled):hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.send-message-btn:not(:disabled):hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.send-message-btn:not(:disabled):hover .btn-icon {
+  transform: scale(1.1) rotate(5deg);
+  color: white;
+}
+
+.send-message-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.send-message-btn:disabled .btn-icon {
+  opacity: 0.6;
+}
+
+.send-message-btn:not(:disabled):active {
+  transform: translateY(0);
 }
 
 .form-note {
@@ -403,11 +516,14 @@
 
   .form-submit {
     margin-top: 5px;
+    justify-content: center;
   }
 
-  .form-submit > * {
+  .send-message-btn {
     width: 100%;
     max-width: 100%;
+    padding: 0.875rem 1.5rem;
+    justify-content: center;
   }
 
   .form-note {

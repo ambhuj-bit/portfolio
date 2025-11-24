@@ -124,9 +124,6 @@ function AboutPage() {
               </div>
             </div>
             
-            {/* <div className="cv-download-section">
-              <CustomButton text="Download CV" path="" icon="arrow-down" />
-            </div> */}
           </div>
         </div>
         <Skills />
