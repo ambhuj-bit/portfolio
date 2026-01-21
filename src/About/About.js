@@ -2,19 +2,14 @@ import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
 import * as Icon from "react-bootstrap-icons";
+import { calculateExperience } from "../utils/calculateYears";
 
 function About() {
   // Calculate years of experience dynamically from March 7, 2022
-  const calculateExperience = () => {
-    const startDate = new Date("2022-03-07");
-    const currentDate = new Date();
-    const diffTime = Math.abs(currentDate - startDate);
-    const diffDays = diffTime / (1000 * 60 * 60 * 24);
-    const years = diffDays / 365.25;
-    return Math.round(years * 10) / 10;
-  };
+
 
   const experienceYears = calculateExperience();
+  console.log("Years of Experience:", experienceYears);
 
   return (
     <div>
@@ -33,7 +28,7 @@ function About() {
           {/* Quick Stats */}
           <div className="quick-stats">
             <div className="stat-item">
-              <div className="stat-number">{experienceYears}+</div>
+              <div className="stat-number">{experienceYears}</div>
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-divider"></div>

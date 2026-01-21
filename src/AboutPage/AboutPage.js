@@ -5,25 +5,11 @@ import Navbar from "../Navbar/Navbar";
 import Skills from "../Skills/Skills";
 import * as Icon from "react-bootstrap-icons";
 import "./About-page.css";
+import { calculateExperience } from "../utils/calculateYears";
 
 function AboutPage() {
   // Calculate years of experience dynamically from March 7, 2022
-  const calculateExperience = () => {
-    const startDate = new Date("2022-03-07");
-    const currentDate = new Date();
-    
-    // Calculate the difference in milliseconds
-    const diffTime = Math.abs(currentDate - startDate);
-    
-    // Convert to days
-    const diffDays = diffTime / (1000 * 60 * 60 * 24);
-    
-    // Calculate years with decimal precision (accounting for leap years)
-    const years = diffDays / 365.25;
-    
-    // Round to 1 decimal place
-    return Math.round(years * 10) / 10;
-  };
+ 
 
   const experienceYears = calculateExperience();
 
@@ -118,7 +104,6 @@ function AboutPage() {
                   <p className="info-label">Experience</p>
                   <h3 className="expereince-number highlight-number">
                     {experienceYears}
-                    <span className="years-label">Years</span>
                   </h3>
                 </div>
               </div>
