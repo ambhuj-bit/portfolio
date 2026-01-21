@@ -30,7 +30,11 @@
   font-family: "Poppins", sans-serif !important;
   padding-bottom: 20px;
   color: var(--text-primary);
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--text-primary) 0%,
+    var(--text-secondary) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -53,7 +57,11 @@
   font-weight: 900;
   font-family: "Poppins", sans-serif !important;
   color: var(--primary-color);
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,7 +91,7 @@
 }
 
 .stat-number {
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 800;
   color: var(--primary-color);
   line-height: 1.2;
@@ -231,7 +239,6 @@
 .social-link:hover .social-icon {
   transform: scale(1.1) rotate(5deg);
 }
-
 
 @media (max-width: 920px) {
   .decription {

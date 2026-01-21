@@ -29,7 +29,7 @@ function About() {
           <div className="quick-stats">
             <div className="stat-item">
               <div className="stat-number">{experienceYears}</div>
-              <div className="stat-label">Years Experience</div>
+              <div className="stat-label">Experience</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
@@ -48,6 +48,7 @@ function About() {
             <span className="skills-label">Expert in:</span>
             <div className="skills-badges">
               <span className="skill-badge">React</span>
+              <span className="skill-badge">Next.js</span>
               <span className="skill-badge">Angular</span>
               <span className="skill-badge">Node.js</span>
               <span className="skill-badge">JavaScript</span>

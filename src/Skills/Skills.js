@@ -14,6 +14,10 @@ function Skills() {
         img: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png",
       },
       {
+        name: "Next.js",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMklBUVBX0yV0l3hIdTIxP-luLdoRYZAzvbA&s",
+      },
+      {
         name: "JavaScript",
         img: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
       },
@@ -61,6 +65,22 @@ function Skills() {
         name: "Jira",
         img: "https://play-lh.googleusercontent.com/_AZCbg39DTuk8k3DiPRASr9EwyW058pOfzvAu1DsfN9ygtbOlbuucmXaHJi5ooYbokQX=w480-h960-rw",
       },
+      {
+        name:"Redux Toolkit",
+        img:"https://cdn.worldvectorlogo.com/logos/redux.svg"
+      },
+      {
+        name:'Zustand',
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHj4UwTW4ANSlNjzQOiiOqfDa6kal9RpF0A&s"
+      },
+      {
+        name:"NgRx",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLAFQkkIGfHzUzsdXe4JCUn2UY4smnp1bow&s"
+      },
+      {
+        name:"Confluence",
+        img:"https://cdn.worldvectorlogo.com/logos/confluence-1.svg"
+      }
     ];
   
   
