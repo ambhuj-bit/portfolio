@@ -372,7 +372,7 @@ export default function App() {
               </div>
 
               {/* Connect Card */}
-              <div className="md:col-span-4 bento-card bg-heading text-bg-dark flex flex-col justify-between hover:bg-primary hover:text-white transition-all duration-700 group cursor-pointer" onClick={() => scrollTo('contact')}>
+              <div className="md:col-span-4 bento-card bg-heading text-bg-grey flex flex-col justify-between hover:bg-primary hover:text-white transition-all duration-700 group cursor-pointer" onClick={() => scrollTo('contact')}>
                 <div className="p-4 bg-black/5 rounded-2xl w-fit mb-12 group-hover:bg-white/10 transition-colors">
                   <Command size={32} />
                 </div>
